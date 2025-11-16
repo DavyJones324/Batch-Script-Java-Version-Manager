@@ -1,0 +1,1142 @@
+@echo off
+Title Java
+SetLocal EnableDelayedExpansion
+:startJavaShortcutRedirectManager
+if "%1"=="11" (
+    call :startJavaMainPrompt11
+) else if "%1"=="12" (
+    call :startJavaMainPrompt12
+) else if "%1"=="13" (
+    call :startJavaMainPrompt13
+) else if "%1"=="14" (
+    call :startJavaMainPrompt14
+) else if "%1"=="15" (
+    call :startJavaMainPrompt15
+) else if "%1"=="16" (
+    call :startJavaMainPrompt16
+) else if "%1"=="17" (
+    call :startJavaMainPrompt17
+) else if "%1"=="18" (
+    call :startJavaMainPrompt18
+) else if "%1"=="19" (
+    call :startJavaMainPrompt19
+) else if "%1"=="20" (
+    call :startJavaMainPrompt20
+) else if "%1"=="21" (
+    call :startJavaMainPrompt21
+) else if "%1"=="22" (
+    call :startJavaMainPrompt22
+) else if "%1"=="23" (
+    call :startJavaMainPrompt23
+) else (
+    call :startJavaMainPrompt24
+)
+:checkAdmin
+net session > nul 2>&1
+if %errorlevel% == 0 (
+    goto menuAdminOptions
+) else (
+    goto menuOptions
+)
+:startJavaMainPrompt11
+@set path=C:\CLI_Tools\Java\jdk-11\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-11\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt12
+@set path=C:\CLI_Tools\Java\jdk-12\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-12\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt13
+@set path=C:\CLI_Tools\Java\jdk-13\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-13\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt14
+@set path=C:\CLI_Tools\Java\jdk-14\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-14\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt15
+@set path=C:\CLI_Tools\Java\jdk-15\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-15\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt16
+@set path=C:\CLI_Tools\Java\jdk-16\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-16\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt17
+@set path=C:\CLI_Tools\Java\jdk-17\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-17\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt18
+@set path=C:\CLI_Tools\Java\jdk-18\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-18\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt19
+@set path=C:\CLI_Tools\Java\jdk-19\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-19\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt20
+@set path=C:\CLI_Tools\Java\jdk-20\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-20\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt21
+@set path=C:\CLI_Tools\Java\jdk-21\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-21\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt22
+@set path=C:\CLI_Tools\Java\jdk-22\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-22\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt23
+@set path=C:\CLI_Tools\Java\jdk-23\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-23\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt24
+@set path=C:\CLI_Tools\Java\jdk-24\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-24\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:startJavaMainPrompt25
+@set path=C:\CLI_Tools\Java\jdk-25\bin;%path%
+set JAVA_EXE="C:\CLI_Tools\Java\jdk-25\bin\java.exe"
+echo Current version of JDK is:
+java -version
+echo.
+echo Main Options: java, javac, javaw, jshell
+echo.
+echo Additional Options: jabswitch, jaccesswalker, jar, jarsigner, javadoc, javap, jcmd, jconsole, jdb, jdeprscan, jdeps,
+echo jfr, jhsdb, jimage, jinfo, jlink, jmap, jmod, jnativescan, jpackage, jrunscript, jstack, jstat, jstatd, jwebserver,
+echo keytool, kinit, klist, ktab, rmiregistry, serialver
+echo.
+goto :eof
+:menuAdminOptions
+Set input=0
+echo Press [ENTER] to activate COMSPEC, or enter the version number you want to start with (Requires manual restart).
+echo.
+echo Version Options: 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+set /P input=%BS%
+if /I %input% EQU 0 goto startComspec
+if /I %input% EQU 11 call :checkAdminJavaPath11
+if /I %input% EQU 12 call :checkAdminJavaPath12
+if /I %input% EQU 13 call :checkAdminJavaPath13
+if /I %input% EQU 14 call :checkAdminJavaPath14
+if /I %input% EQU 15 call :checkAdminJavaPath15
+if /I %input% EQU 16 call :checkAdminJavaPath16
+if /I %input% EQU 17 call :checkAdminJavaPath17
+if /I %input% EQU 18 call :checkAdminJavaPath18
+if /I %input% EQU 19 call :checkAdminJavaPath19
+if /I %input% EQU 20 call :checkAdminJavaPath20
+if /I %input% EQU 21 call :checkAdminJavaPath21
+if /I %input% EQU 22 call :checkAdminJavaPath22
+if /I %input% EQU 23 call :checkAdminJavaPath23
+if /I %input% EQU 24 call :checkAdminJavaPath24
+if /I %input% EQU 25 call :checkAdminJavaPath25
+if /I %input% EQU abo goto startAbout
+if /I %input% EQU abou goto startAbout
+if /I %input% EQU about goto startAbout
+if /I %input% EQU cls cls&goto startJavaShortcutRedirectManager
+if /I %input% EQU exi goto exitBatchProgram
+if /I %input% EQU exit goto exitBatchProgram
+echo.
+echo Invalid selection. Please try again.
+echo.
+goto menuAdminOptions
+:checkAdminJavaPath11
+echo.
+if exist C:\CLI_Tools\Java\jdk-11\bin\java.exe (
+    goto setJavaShortcutAdminReplacement11
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement11
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '11'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-11\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt11
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath12
+echo.
+if exist C:\CLI_Tools\Java\jdk-12\bin\java.exe (
+    goto setJavaShortcutAdminReplacement12
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement12
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '12'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-12\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt12
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath13
+echo.
+if exist C:\CLI_Tools\Java\jdk-13\bin\java.exe (
+    goto setJavaShortcutAdminReplacement13
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement13
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '13'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-13\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt13
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath14
+echo.
+if exist C:\CLI_Tools\Java\jdk-14\bin\java.exe (
+    goto setJavaShortcutAdminReplacement14
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement14
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '14'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-14\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt14
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath15
+echo.
+if exist C:\CLI_Tools\Java\jdk-15\bin\java.exe (
+    goto setJavaShortcutAdminReplacement15
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement15
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '15'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-15\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt15
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath16
+echo.
+if exist C:\CLI_Tools\Java\jdk-16\bin\java.exe (
+    goto setJavaShortcutAdminReplacement16
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement16
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '16'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-16\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt16
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath17
+echo.
+if exist C:\CLI_Tools\Java\jdk-17\bin\java.exe (
+    goto setJavaShortcutAdminReplacement17
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement17
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '17'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-17\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt17
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath18
+echo.
+if exist C:\CLI_Tools\Java\jdk-18\bin\java.exe (
+    goto setJavaShortcutAdminReplacement18
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement18
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '18'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-18\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt18
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath19
+echo.
+if exist C:\CLI_Tools\Java\jdk-19\bin\java.exe (
+    goto setJavaShortcutAdminReplacement19
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement19
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '19'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-19\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt19
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath20
+echo.
+if exist C:\CLI_Tools\Java\jdk-20\bin\java.exe (
+    goto setJavaShortcutAdminReplacement20
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement20
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '20'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-20\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt20
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath21
+echo.
+if exist C:\CLI_Tools\Java\jdk-21\bin\java.exe (
+    goto setJavaShortcutAdminReplacement21
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement21
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '21'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-21\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt21
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath22
+echo.
+if exist C:\CLI_Tools\Java\jdk-22\bin\java.exe (
+    goto setJavaShortcutAdminReplacement22
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement22
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '22'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-22\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt22
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath23
+echo.
+if exist C:\CLI_Tools\Java\jdk-23\bin\java.exe (
+    goto setJavaShortcutAdminReplacement23
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement23
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '23'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-23\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt23
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath24
+echo.
+if exist C:\CLI_Tools\Java\jdk-24\bin\java.exe (
+    goto setJavaShortcutAdminReplacement24
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement24
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '24'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-24\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt24
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkAdminJavaPath25
+echo.
+if exist C:\CLI_Tools\Java\jdk-25\bin\java.exe (
+    goto setJavaShortcutAdminReplacement25
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutAdminReplacement25
+set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
+set "JAVA_SHORTCUT_NAME=JDK.lnk"
+set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
+powershell -Command ^
+$WshShell = New-Object -ComObject WScript.Shell; ^
+$Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
+$Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
+$Shortcut.Arguments = '25'; ^
+$Shortcut.WorkingDirectory = '%~dp0'; ^
+$Shortcut.Save(); ^
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-25\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt25
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:menuOptions
+Set input=0
+echo Press [ENTER] to activate COMSPEC, or enter the version number you want to start with (Requires manual restart).
+echo.
+echo Version Options: 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+set /P input=%BS%
+if /I %input% EQU 0 goto startComspec
+if /I %input% EQU 11 call :checkJavaPath11
+if /I %input% EQU 12 call :checkJavaPath12
+if /I %input% EQU 13 call :checkJavaPath13
+if /I %input% EQU 14 call :checkJavaPath14
+if /I %input% EQU 15 call :checkJavaPath15
+if /I %input% EQU 16 call :checkJavaPath16
+if /I %input% EQU 17 call :checkJavaPath17
+if /I %input% EQU 18 call :checkJavaPath18
+if /I %input% EQU 19 call :checkJavaPath19
+if /I %input% EQU 20 call :checkJavaPath20
+if /I %input% EQU 21 call :checkJavaPath21
+if /I %input% EQU 22 call :checkJavaPath22
+if /I %input% EQU 23 call :checkJavaPath23
+if /I %input% EQU 24 call :checkJavaPath24
+if /I %input% EQU 25 call :checkJavaPath25
+if /I %input% EQU abo goto startAbout
+if /I %input% EQU abou goto startAbout
+if /I %input% EQU about goto startAbout
+if /I %input% EQU cls cls&goto startJavaShortcutRedirectManager
+if /I %input% EQU exi goto exitBatchProgram
+if /I %input% EQU exit goto exitBatchProgram
+echo.
+echo Invalid selection. Please try again.
+echo.
+goto menuOptions
+:checkJavaPath11
+echo.
+if exist C:\CLI_Tools\Java\jdk-11\bin\java.exe (
+    goto setJavaShortcutReplacement11
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement11
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "11" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-11\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt11
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath12
+echo.
+if exist C:\CLI_Tools\Java\jdk-12\bin\java.exe (
+    goto setJavaShortcutReplacement12
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement12
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "12" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-12\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt12
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath13
+echo.
+if exist C:\CLI_Tools\Java\jdk-13\bin\java.exe (
+    goto setJavaShortcutReplacement13
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement13
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "13" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-13\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt13
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath14
+echo.
+if exist C:\CLI_Tools\Java\jdk-14\bin\java.exe (
+    goto setJavaShortcutReplacement14
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement14
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "14" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-14\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt14
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath15
+echo.
+if exist C:\CLI_Tools\Java\jdk-15\bin\java.exe (
+    goto setJavaShortcutReplacement15
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement15
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "15" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-15\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt15
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath16
+echo.
+if exist C:\CLI_Tools\Java\jdk-16\bin\java.exe (
+    goto setJavaShortcutReplacement16
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement16
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "16" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-16\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt16
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath17
+echo.
+if exist C:\CLI_Tools\Java\jdk-17\bin\java.exe (
+    goto setJavaShortcutReplacement17
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement17
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "17" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-17\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt17
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath18
+echo.
+if exist C:\CLI_Tools\Java\jdk-18\bin\java.exe (
+    goto setJavaShortcutReplacement18
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement18
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "18" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-18\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt18
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath19
+echo.
+if exist C:\CLI_Tools\Java\jdk-19\bin\java.exe (
+    goto setJavaShortcutReplacement19
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement19
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "19" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-19\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt19
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath20
+echo.
+if exist C:\CLI_Tools\Java\jdk-20\bin\java.exe (
+    goto setJavaShortcutReplacement20
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement20
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "20" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-20\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt20
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath21
+echo.
+if exist C:\CLI_Tools\Java\jdk-21\bin\java.exe (
+    goto setJavaShortcutReplacement21
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement21
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "21" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-21\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt21
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath22
+echo.
+if exist C:\CLI_Tools\Java\jdk-22\bin\java.exe (
+    goto setJavaShortcutReplacement22
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement22
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "22" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-22\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt22
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath23
+echo.
+if exist C:\CLI_Tools\Java\jdk-23\bin\java.exe (
+    goto setJavaShortcutReplacement23
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement23
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "23" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-23\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt23
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath24
+echo.
+if exist C:\CLI_Tools\Java\jdk-24\bin\java.exe (
+    goto setJavaShortcutReplacement24
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement24
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "24" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-24\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt24
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:checkJavaPath25
+echo.
+if exist C:\CLI_Tools\Java\jdk-25\bin\java.exe (
+    goto setJavaShortcutReplacement25
+) else (
+    echo The selected Java version does not exist.
+)
+goto :eof
+:setJavaShortcutReplacement25
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "C:\Users\%USERNAME%\Desktop\JDK.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "C:\CLI_Tools\Java\javapath.bat" >> %SCRIPT%
+echo oLink.Arguments = "25" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-25\bin
+set "OLDPATH=%PATH%"
+path "%JAVA_INSTALL_PATH%;%PATH%"
+path "%OLDPATH%"
+call :startJavaMainPrompt25
+echo The script will now exit.
+echo.
+pause
+goto exitBatchProgram
+:startAbout
+echo.
+echo       Author: DavyJones324 (Alexander Summers)
+echo      Details: This QOL program is meant to eliminate Java's trace amounts of backward incompatibility by switching
+echo               between different installed versions. It is not required for running older Java programs, but it is both
+echo               optional and complementary.
+echo Compatiblity: Both the Davy Jones OS Batch Script Launcher and the Desktop Screen itself
+echo Release Date: XX/XX/XXXX
+echo.
+goto startJavaShortcutRedirectManager
+:exitBatchProgram
+cls
+exit
+:startComspec
+echo.
+SetLocal DisableDelayedExpansion
+@echo on
+@%comspec%
