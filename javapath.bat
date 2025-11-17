@@ -255,11 +255,8 @@ if /I %input% EQU 22 call :checkAdminJavaPath22
 if /I %input% EQU 23 call :checkAdminJavaPath23
 if /I %input% EQU 24 call :checkAdminJavaPath24
 if /I %input% EQU 25 call :checkAdminJavaPath25
-if /I %input% EQU abo goto startAbout
-if /I %input% EQU abou goto startAbout
 if /I %input% EQU about goto startAbout
 if /I %input% EQU cls cls&goto startJavaShortcutRedirectManager
-if /I %input% EQU exi goto exitBatchProgram
 if /I %input% EQU exit goto exitBatchProgram
 echo.
 echo Invalid selection. Please try again.
@@ -274,20 +271,13 @@ if exist C:\CLI_Tools\Java\jdk-11\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement11
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '11'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-11\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt11
 echo The script will now exit.
 echo.
@@ -302,20 +292,13 @@ if exist C:\CLI_Tools\Java\jdk-12\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement12
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '12'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-12\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt12
 echo The script will now exit.
 echo.
@@ -330,20 +313,13 @@ if exist C:\CLI_Tools\Java\jdk-13\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement13
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '13'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-13\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt13
 echo The script will now exit.
 echo.
@@ -358,20 +334,13 @@ if exist C:\CLI_Tools\Java\jdk-14\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement14
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '14'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-14\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt14
 echo The script will now exit.
 echo.
@@ -386,20 +355,13 @@ if exist C:\CLI_Tools\Java\jdk-15\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement15
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '15'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-15\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt15
 echo The script will now exit.
 echo.
@@ -414,20 +376,13 @@ if exist C:\CLI_Tools\Java\jdk-16\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement16
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '16'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-16\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt16
 echo The script will now exit.
 echo.
@@ -442,20 +397,13 @@ if exist C:\CLI_Tools\Java\jdk-17\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement17
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '17'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-17\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt17
 echo The script will now exit.
 echo.
@@ -470,20 +418,13 @@ if exist C:\CLI_Tools\Java\jdk-18\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement18
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '18'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-18\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt18
 echo The script will now exit.
 echo.
@@ -498,20 +439,13 @@ if exist C:\CLI_Tools\Java\jdk-19\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement19
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '19'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-19\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt19
 echo The script will now exit.
 echo.
@@ -526,20 +460,13 @@ if exist C:\CLI_Tools\Java\jdk-20\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement20
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '20'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-20\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt20
 echo The script will now exit.
 echo.
@@ -554,20 +481,13 @@ if exist C:\CLI_Tools\Java\jdk-21\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement21
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '21'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-21\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt21
 echo The script will now exit.
 echo.
@@ -582,20 +502,13 @@ if exist C:\CLI_Tools\Java\jdk-22\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement22
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '22'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-22\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt22
 echo The script will now exit.
 echo.
@@ -610,20 +523,13 @@ if exist C:\CLI_Tools\Java\jdk-23\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement23
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '23'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-23\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt23
 echo The script will now exit.
 echo.
@@ -638,20 +544,13 @@ if exist C:\CLI_Tools\Java\jdk-24\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement24
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '24'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-24\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt24
 echo The script will now exit.
 echo.
@@ -666,20 +565,13 @@ if exist C:\CLI_Tools\Java\jdk-25\bin\java.exe (
 )
 goto :eof
 :setJavaShortcutAdminReplacement25
-set "JAVA_SCRIPT_PATH=C:\CLI_Tools\Java\javapath.bat
-set "JAVA_SHORTCUT_NAME=JDK.lnk"
-set "JAVA_SHORTCUT_PATH=C:\Users\%USERNAME%\Desktop\JDK.lnk"
 powershell -Command ^
 $WshShell = New-Object -ComObject WScript.Shell; ^
 $Shortcut = $WshShell.CreateShortcut('C:\Users\%USERNAME%\Desktop\JDK.lnk'); ^
 $Shortcut.TargetPath = 'CLI_Tools\Java\javapath.bat'; ^
 $Shortcut.Arguments = '25'; ^
 $Shortcut.WorkingDirectory = '%~dp0'; ^
-$Shortcut.Save(); ^
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-25\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
+$Shortcut.Save();
 call :startJavaMainPrompt25
 echo The script will now exit.
 echo.
@@ -707,11 +599,8 @@ if /I %input% EQU 22 call :checkJavaPath22
 if /I %input% EQU 23 call :checkJavaPath23
 if /I %input% EQU 24 call :checkJavaPath24
 if /I %input% EQU 25 call :checkJavaPath25
-if /I %input% EQU abo goto startAbout
-if /I %input% EQU abou goto startAbout
 if /I %input% EQU about goto startAbout
-if /I %input% EQU cls cls&goto startJavaShortcutRedirectManager
-if /I %input% EQU exi goto exitBatchProgram
+if /I %input% EQU cls cls&goto startJavaShortcutRedirectManager\
 if /I %input% EQU exit goto exitBatchProgram
 echo.
 echo Invalid selection. Please try again.
@@ -735,10 +624,6 @@ echo oLink.Arguments = "11" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-11\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt11
 echo The script will now exit.
 echo.
@@ -762,10 +647,6 @@ echo oLink.Arguments = "12" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-12\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt12
 echo The script will now exit.
 echo.
@@ -789,10 +670,6 @@ echo oLink.Arguments = "13" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-13\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt13
 echo The script will now exit.
 echo.
@@ -816,10 +693,6 @@ echo oLink.Arguments = "14" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-14\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt14
 echo The script will now exit.
 echo.
@@ -843,10 +716,6 @@ echo oLink.Arguments = "15" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-15\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt15
 echo The script will now exit.
 echo.
@@ -870,10 +739,6 @@ echo oLink.Arguments = "16" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-16\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt16
 echo The script will now exit.
 echo.
@@ -897,10 +762,6 @@ echo oLink.Arguments = "17" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-17\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt17
 echo The script will now exit.
 echo.
@@ -924,10 +785,6 @@ echo oLink.Arguments = "18" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-18\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt18
 echo The script will now exit.
 echo.
@@ -951,10 +808,6 @@ echo oLink.Arguments = "19" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-19\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt19
 echo The script will now exit.
 echo.
@@ -978,10 +831,6 @@ echo oLink.Arguments = "20" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-20\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt20
 echo The script will now exit.
 echo.
@@ -1005,10 +854,6 @@ echo oLink.Arguments = "21" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-21\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt21
 echo The script will now exit.
 echo.
@@ -1032,10 +877,6 @@ echo oLink.Arguments = "22" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-22\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt22
 echo The script will now exit.
 echo.
@@ -1059,10 +900,6 @@ echo oLink.Arguments = "23" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-23\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt23
 echo The script will now exit.
 echo.
@@ -1086,10 +923,6 @@ echo oLink.Arguments = "24" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-24\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt24
 echo The script will now exit.
 echo.
@@ -1113,10 +946,6 @@ echo oLink.Arguments = "25" >> %SCRIPT%
 echo oLink.Save >> %SCRIPT%
 cscript /nologo %SCRIPT%
 del %SCRIPT%
-set "JAVA_INSTALL_PATH=C:\CLI_Tools\Java\jdk-25\bin
-set "OLDPATH=%PATH%"
-path "%JAVA_INSTALL_PATH%;%PATH%"
-path "%OLDPATH%"
 call :startJavaMainPrompt25
 echo The script will now exit.
 echo.
@@ -1125,11 +954,12 @@ goto exitBatchProgram
 :startAbout
 echo.
 echo       Author: DavyJones324 (Alexander Summers)
+echo Program Name: Batch Script Java Version Manager
 echo      Details: This QOL program is meant to eliminate Java's trace amounts of backward incompatibility by switching
 echo               between different installed versions. It is not required for running older Java programs, but it is both
 echo               optional and complementary.
 echo Compatiblity: Both the Davy Jones OS Batch Script Launcher and the Desktop Screen itself
-echo Release Date: XX/XX/XXXX
+echo Release Date: 11/21/2025
 echo.
 goto startJavaShortcutRedirectManager
 :exitBatchProgram
